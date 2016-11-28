@@ -8,7 +8,7 @@
  * File:   nnArray.h
  * Author: homayoun
  *
- * Created on November 22, 2016, 11:50 AM
+ * Created on November 18, 2016, 11:16 AM
  */
 
 #ifndef NNARRAY_H
@@ -20,7 +20,9 @@ public:
     nnArray();
     nnArray(int _size, int content);
     nnArray(const nnArray& orig);
-    virtual ~nnArray();
+    ~nnArray();
+
+    void operator+(int); //This needs to be modified to make sure no negative numbers are added
 private:
 
 };
